@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 0, 0.2),
+    rgb(255, 0, 0, 0.2),
+    rgb(128, 0, 128, 0.4)
+  );
+}
+.myContainer {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+}
+.myRow {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  min-height: 100vh;
+  gap: 40px;
+}
+
+.myCol {
+  /* border: 1px solid red; */
+  width: calc(100% / 2);
+  min-height: 100%;
+}
+
+.myLeftContentBox {
+  min-height: 100vh;
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.myNestedRow {
+  /* min-height: 100%; */
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+  padding: 50px 15px;
+  gap: 15px;
+}
+.myNestedCol {
+  /* padding: 15px; */
+  /* min-height: 100%; */
+  /* border: 1px solid red; */
+  width: calc(100% / 2);
+}
+.myLeftImageBox {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.myLeftImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 42.55vh;
+  width: 100%;
+}
+.myLeftImageTop {
+  background-image: url("./images/pexels-rachel-claire-6752433.jpg");
+}
+.myLeftImageBottom {
+  background-image: url("./images/pexels-eva-bronzini-6141651.jpg");
+}
+.myImageRight {
+  background-image: url("./images/pexels-mister-mister-3434523.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+}
+.myRightContentContainer {
+  min-height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.myRightContentBox {
+  letter-spacing: 4px;
+  background-color: rgb(255, 126, 126);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 30px;
+}
+.myRightContentBox h1 {
+  font-weight: normal;
+}
+.myRightContentBox p {
+  font-size: 50px;
+  font-weight: bold;
+}
+.myClick {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.myArrow {
+  display: flex;
+}
+
+.myArrow img {
+  max-width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+  .myRow {
+    gap: 15px;
+  }
+  .myNestedRow {
+    align-items: center;
+    padding: 50px 15px;
+    gap: 10px;
+  }
+  .myLeftImageBox {
+    gap: 5px;
+  }
+  .myLeftImage {
+    min-height: 30vh;
+  }
+  .myLeftImageTop {
+    background-image: url("./images/pexels-rachel-claire-6752433.jpg");
+  }
+  .myLeftImageBottom {
+    background-image: url("./images/pexels-eva-bronzini-6141651.jpg");
+  }
+  .myImageRight {
+    min-height: 61vh;
+  }
+  .myRightContentBox {
+    letter-spacing: 2px;
+    gap: 20px;
+    padding: 15px 25px;
+  }
+
+  .myRightContentBox p {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .myClick {
+    font-size: 15px;
+  }
+  .myArrow img {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myRow {
+    gap: 12px;
+  }
+  .myNestedRow {
+    align-items: center;
+    padding: 50px 15px;
+    gap: 10px;
+  }
+  .myLeftImageBox {
+    gap: 5px;
+  }
+  .myLeftImage {
+    min-height: 25vh;
+  }
+  .myLeftImageTop {
+    background-image: url("./images/pexels-rachel-claire-6752433.jpg");
+  }
+  .myLeftImageBottom {
+    background-image: url("./images/pexels-eva-bronzini-6141651.jpg");
+  }
+  .myImageRight {
+    min-height: 51vh;
+  }
+  .myRightContentBox {
+    letter-spacing: 2px;
+    gap: 15px;
+    padding: 12px 22px;
+  }
+  .myRightContentBox h1 {
+    font-size: 22px;
+  }
+  .myRightContentBox p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .myClick {
+    font-size: 13px;
+  }
+  .myArrow img {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .myRow {
+    gap: 0;
+    flex-direction: column;
+  }
+  .myCol {
+    width: 100%;
+  }
+  .myNestedRow {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
+  .myNestedCol {
+    width: 100%;
+  }
+  .myLeftImageBox {
+    gap: 15px;
+  }
+  .myLeftImage {
+    min-height: 50vh;
+  }
+  .myLeftImageTop {
+    background-image: url("./images/pexels-rachel-claire-6752433.jpg");
+  }
+  .myLeftImageBottom {
+    background-image: url("./images/pexels-eva-bronzini-6141651.jpg");
+  }
+  .myImageRight {
+    min-height: 50vh;
+  }
+  .myRightContentContainer {
+    margin: 15px auto;
+  }
+  .myRightContentBox {
+    letter-spacing: 2px;
+    gap: 15px;
+    padding: 12px 22px;
+    margin: 0px 15px;
+  }
+  .myRightContentBox h1 {
+    font-size: 25px;
+  }
+  .myRightContentBox p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .myClick {
+    font-size: 15px;
+  }
+  .myArrow img {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .myRow {
+    gap: 0;
+    flex-direction: column;
+  }
+  .myCol {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .myNestedRow {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
+  .myNestedCol {
+    width: 100%;
+  }
+  .myLeftImageBox {
+    gap: 15px;
+  }
+  .myLeftImage {
+    min-height: 40vh;
+  }
+
+  .myImageRight {
+    min-height: 40vh;
+  }
+  .myRightContentContainer {
+    margin: 15px auto;
+  }
+  .myRightContentBox {
+    letter-spacing: 2px;
+    gap: 15px;
+    padding: 12px 22px;
+    margin: 0px 15px;
+  }
+  .myRightContentBox h1 {
+    font-size: 24px;
+  }
+  .myRightContentBox p {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .myClick {
+    font-size: 13px;
+  }
+  .myArrow img {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .myImageRight {
+    min-height: 50vh;
+  }
+  .myLeftImage {
+    min-height: 30vh;
+  }
+
+  .myImageRight {
+    min-height: 30vh;
+  }
+  .myRightContentBox h1 {
+    font-size: 20px;
+  }
+  .myRightContentBox p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .myClick {
+    font-size: 12px;
+  }
+  .myArrow img {
+    max-width: 45%;
+  }
+}
